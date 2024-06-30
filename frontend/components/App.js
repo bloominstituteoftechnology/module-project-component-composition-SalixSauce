@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import Card from './Card'
 
-const apiKey = "DEMO_KEY"
+const apiKey = "DEMO KEY"
 const URL = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}`
 
 
@@ -32,6 +32,7 @@ function App() {
       "title": "Hubble's NGC 1546",
       "url": "https://apod.nasa.gov/apod/image/2406/NGC1546compassHST1024.jpg"
     })
+    fetchPhoto()
   }, [])
 
   if (!apod) return 'Fetching Photo of the Day...'
